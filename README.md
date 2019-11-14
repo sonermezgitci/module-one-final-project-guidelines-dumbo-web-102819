@@ -1,3 +1,77 @@
+
+
+####metaprogramming and Mass Assignment -
+
+###ActiveRecord
+
+* what are the steps for setting up ActiveRecord on a model?
+0. Setup the connection to the database 
+-config/environment.rb
+
+1.Create migration
+- create a file (using'rake db :migrate')
+
+2- Write our migration 
+
+-write the code for migration in that file 
+    def change
+    create_table :users do |t|
+        t.string :name
+        t.string :bio
+        t.timestamps
+        #creates_at,updated_at
+      end
+    end
+  end 
+ 
+
+
+ 3.Run Our Migration
+'rake db :migrate 
+3.5 test/check your migration
+rake db:migrate:status(pr look at your schema)
+
+4 Connect tables to Ruby classes 
+
+
+* How can we do CRUD actions using ActiveRecord?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Module One Final Project Guidelines
 
 Congratulations, you're at the end of module one! You've worked crazy hard to get here and have learned a ton.
